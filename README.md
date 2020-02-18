@@ -32,18 +32,29 @@ end
 
 ## Usage
 ```
-AliMail.send_text(from: 'your_send_address@example.com', to: ['email1@example.com',
-'email2@example.com'], subject: 'Hello World From AliMail', text_body: 'mail content', options: { 'FromAlias' =>
-'Aliyun' } )
+# Send plagin text
+AliMail.send_text(
+    from: 'your_send_address@example.com',
+    to: ['email1@example.com', 'email2@example.com'],
+    subject: 'Hello World From AliMail',
+    text_body: 'mail content',
+    options: { 'FromAlias' =>'Aliyun' } 
+)
 
-AliMail.send_html(from: 'your_send_address@example.com', to: ['email1@example.com',
-'email2@example.com'], subject: 'Hello World From AliMail', html_body: '<h1>mail content</h1>', options: { 'FromAlias' =>
-'Aliyun' } )
+# Send HTML
+AliMail.send_html(
+    from: 'your_send_address@example.com',
+    to: ['email1@example.com','email2@example.com'],
+    subject: 'Hello World From AliMail',
+    html_body: '<h1>mail content</h1>',
+    options: { 'FromAlias' => 'Aliyun' }
+)
 ```
 Options can override settings in configuration. All Option list in office documemnt can be passed in
 options, for detail:
 
 https://help.aliyun.com/document_detail/29440.html
+
 https://help.aliyun.com/document_detail/29444.html
 
 ## Development
@@ -54,8 +65,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/veetase/ali_mail.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+Bug reports and pull requests are welcome on GitHub at https://github.com/Tapas/ali_mail.
